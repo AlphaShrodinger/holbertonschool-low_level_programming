@@ -6,16 +6,12 @@
  */
 int main(void)
 {
-	int x;
+	int num;
 
-	for (x = 0; x < 10; x++)
-{
-	printf("%d", x);
-	if (x < 9)
-{
-	printf(", ");
-}
-}
+	for (num = 0; num < 10; num++)
+		printf("%d", num);
+
 	printf("\n");
+
 	return (0);
 }
