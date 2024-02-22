@@ -7,16 +7,18 @@
 
 int main(void)
 {
-	int i, j;
+	int d, p;
 
-	for (i = 0; i <= 9; i++)
+	for (d = '0'; d < '9'; d++)
 	{
-	for (j = 0; j <= 9; j++)
+	for (p = d + 1; p <= '9'; p++)
 	{
-	if (i != j)
+	if (p != d)
 	{
-	putchar(i + '0');
-	putchar(j + '0');
+	putchar(d);
+	putchar(p);
+	if (d == '8' && p == '9')
+		continue;
 	putchar(44);
 	putchar(' ');
 	}
